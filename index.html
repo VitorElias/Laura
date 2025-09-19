@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Para Laurinha 💖</title>
+  <style>
+    :root {
+      --vinho: #b3003b;
+      --vinho-claro: #ff4d6d;
+      --fundo: linear-gradient(135deg, #0d0000, #1a0000);
+      --texto-claro: #f5e6e8;
+      --sombra: 0 0 30px var(--vinho);
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 20px;
+      background: var(--fundo);
+      font-family: 'Segoe UI', sans-serif;
+      color: var(--texto-claro);
+      text-align: center;
+      overflow-x: hidden;
+      position: relative;
+    }
+
+    h1 {
+      font-size: 3rem;
+      color: var(--vinho);
+      text-shadow: 2px 2px 5px #000, 0 0 15px var(--vinho-claro);
+      margin-bottom: 40px;
+      padding: 10px 20px;
+      background: rgba(0, 0, 0, 0.5);
+      border-radius: 15px;
+      animation: pulse 3s infinite;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    @keyframes pulse {
+      0%, 100% {
+        text-shadow: 2px 2px 5px #000, 0 0 15px var(--vinho-claro);
+      }
+      50% {
+        text-shadow: 2px 2px 10px #000, 0 0 25px var(--vinho-claro);
+      }
+    }
+
+    .video-block, .photo-block {
+      margin-bottom: 50px;
+      max-width: 350px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    video, img {
+      max-width: 350px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: var(--sombra);
+      border: 2px solid var(--vinho-claro);
+      transition: all 0.3s ease-in-out;
+      display: block;
+    }
+
+    video:hover, img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 50px var(--vinho-claro);
+    }
+
+    .text-below-video {
+      font-size: 1.4rem;
+      max-width: 800px;
+      margin: 10px auto 0 auto;
+      line-height: 1.6;
+      color: var(--texto-claro);
+      text-shadow: 1px 1px 3px #000;
+      background: rgba(0, 0, 0, 0.4);
+      border-radius: 12px;
+      padding: 15px 25px;
+      border: 1px solid var(--vinho-claro);
+      word-wrap: break-word;
+    }
+
+    /* Corações subindo */
+    .hearts-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      overflow: hidden;
+      z-index: 1;
+    }
+
+    .heart {
+      position: absolute;
+      font-size: 24px;
+      animation: floatUp linear infinite;
+      filter: drop-shadow(0 0 5px var(--vinho));
+    }
+
+    @keyframes floatUp {
+      0% {
+        transform: translateY(100vh) scale(1);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-10vh) scale(1.2);
+        opacity: 0;
+      }
+    }
+
+    /* === RESPONSIVO === */
+    @media (max-width: 900px) {
+      .video-block, .photo-block {
+        max-width: 300px;
+      }
+
+      video, img {
+        max-width: 100%;
+      }
+
+      .text-below-video {
+        font-size: 1.2rem;
+        padding: 12px 20px;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        padding: 8px 15px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 20px 10px;
+      }
+
+      .video-block, .photo-block {
+        max-width: 100%;
+      }
+
+      video, img {
+        width: 100%;
+      }
+
+      .text-below-video {
+        font-size: 1.1rem;
+        padding: 10px 15px;
+      }
+
+      h1 {
+        font-size: 2rem;
+        padding: 6px 10px;
+      }
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>Para Laurinha 💖</h1>
+
+  <div class="photo-block">
+    <img src="FtDaLaurinha.png" alt="Foto da Laurinha" />
+    <p class="text-below-video">
+      Esse site vai para a minha vida! A corintiana mais linda que já vi, super gente boa, atraente, e perfeita de todos os jeitos.
+    </p>
+  </div>
+
+  <div class="video-block">
+    <video autoplay loop muted playsinline>
+      <source src="laurinha.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo.
+    </video>
+    <p class="text-below-video">
+      A pessoa em quem penso ao acordar e antes de dormir. A pessoa que, mesmo quando estamos juntos, só de imaginar que isso pode acabar, já me deixa triste.
+    </p>
+  </div>
+
+  <div class="video-block">
+    <video autoplay loop muted playsinline>
+      <source src="GymRat.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo.
+    </video>
+    <p class="text-below-video">
+      A ratinha de academia com o corpo perfeito que conseguiu o impossível: me fazer encarar o treino de perna (coisa que eu jamais imaginaria fazer)! kkk
+    </p>
+  </div>
+
+  <div class="video-block">
+    <video autoplay loop muted playsinline>
+      <source src="fitdance.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo.
+    </video>
+    <p class="text-below-video">
+      A melhor e mais linda dançarina do FitDance! Toda segunda e quarta, quando te vejo dançar, fico hipnotizado, admirando você dançando.
+    </p>
+  </div>
+
+  <div class="video-block">
+    <video autoplay loop muted playsinline>
+      <source src="Candomblé.mp4" type="video/mp4" />
+      Seu navegador não suporta vídeo.
+    </video>
+    <p class="text-below-video">
+      E a macumbeira mais dedicada que já conheci! A fé que você tem é tão forte, a firmeza, o conhecimento e o amor pela espiritualidade são tão grandes que só me inspiram.
+    </p>
+  </div>
+
+  <p class="text-below-video">
+     Bom, eu venho trabalhando nisso há um tempo, vida. Eu não sou bom com palavras, às vezes não consigo me comunicar direito, mas espero que, com esse pequeno gesto, eu consiga mostrar o quanto sou loucamente apaixonado por você. Espero que, assim, a gente possa continuar construindo momentos incríveis juntos, cheios de amor, risadas e cumplicidade, e que cada dia seja melhor que o anterior ao seu lado.
+  </p>
+
+  <!-- Música -->
+  <audio id="musica" autoplay loop>
+    <source src="ViniciusDeMoraes.mp3" type="audio/mpeg" />
+    Seu navegador não suporta áudio.
+  </audio>
+
+  <!-- Corações flutuantes -->
+  <div class="hearts-container" id="hearts-container"></div>
+
+  <script>
+    const musica = document.getElementById('musica');
+    musica.play().catch(() => {
+      console.log('Autoplay bloqueado. Toque na tela para iniciar a música.');
+    });
+
+    function createHeart() {
+      const heart = document.createElement('div');
+      heart.classList.add('heart');
+      heart.innerText = '❤️';
+
+      const left = Math.random() * 100;
+      const size = Math.random() * 30 + 40;
+      const duration = Math.random() * 3 + 3;
+
+      heart.style.left = `${left}vw`;
+      heart.style.fontSize = `${size}px`;
+      heart.style.animationDuration = `${duration}s`;
+
+      document.getElementById('hearts-container').appendChild(heart);
+
+      setTimeout(() => heart.remove(), duration * 1000);
+    }
+
+    setInterval(createHeart, 300);
+  </script>
+
+</body>
+</html>
